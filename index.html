@@ -1,285 +1,267 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title -->
-    <title>时政通,时事政治,时政一点通,热点新闻汇总</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- Meta tags -->
-    <meta name="keywords" content="时事政治,考研政治,时事政治汇总,中考,高考,时事政治试题及答案,时政热点,时事新闻,时事政治app,事业单位考试,公务员考试">
-    <meta name="description" content="时政通,时政一点通,时事一点通,时事政治考试网，提供时政热点、试题及备考资料，助力公务员、事业单位等考试。时事政治试题及答案,时事政治汇总资料,时事政治必考题深受中考、考研、国家公务员、事业编考生和考试研究部门的信任与好评，是时政考试的必备资料!">
-    <!-- Open Graph -->
-    <meta property="og:title" content="时政通,时事政治,时政一点通,热点新闻汇总">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.shizhengtong.com/">
-    <meta property="og:image" content="https://apps.qtimg.com/assets/brand/8cef2dcd1237f2ec.png">
-    <meta property="og:description" content="时政通,时政一点通,时事一点通,时事政治考试网，提供时政热点、试题及备考资料，助力公务员、事业单位等考试。时事政治试题及答案,时事政治汇总资料,时事政治必考题深受中考、考研、国家公务员、事业编考生和考试研究部门的信任与好评，是时政考试的必备资料!">
-    <meta property="og:site_name" content="时政通,时事政治,时政一点通,热点新闻汇总">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>兰山区梦颖网络中心</title>
     <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://apps.alyjs.com/traffic/d93afde98cef2dcd1237f2ec9fa0a3b0.js"></script>
     <style>
-        * { box-sizing: border-box; }
-        html, body {
-            height: 100%;
-            margin: 0;
-            background: #fff;
-            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #3e3431;
+            background: #f7f3f1;
             -webkit-font-smoothing: antialiased;
         }
-        body {
-            display: flex;
-            flex-direction: column;
+        a { color: #b37022; transition: color 0.3s; }
+        a:hover { color: #774b16; text-decoration: none; }
+
+        .navbar {
+            margin-bottom: 0; border: none; border-radius: 0;
+            background: #ffffff;
+            padding: 10px 0;
+            border-bottom: 1px solid #e2dedd;
+        }
+        .navbar-brand {
+            font-size: 22px; font-weight: 700; letter-spacing: 2px;
+            color: #4e2317 !important;
+        }
+        .navbar-nav > li > a {
+            font-size: 14px; letter-spacing: 1px;
+            color: #6e615d !important;
+            padding: 15px 20px; transition: all 0.3s;
+        }
+        .navbar-nav > li > a:hover {
+            color: #7c3826 !important;
+            background: #f1eeee;
+            border-radius: 4px;
         }
 
-        /* ── 顶部导航条 ── */
-        .top-bar {
-            border-bottom: 1px solid #f0f0f0;
-            padding: 14px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .hero {
+            background: linear-gradient(135deg, #f1e6e3 0%, #f7f3f1 100%);
+            padding: 120px 0 100px; text-align: center;
         }
-        .top-bar .logo {
-            font-size: 16px;
-            font-weight: 500;
-            color: #1a1a1a;
-            letter-spacing: 2px;
+        .hero h1 {
+            font-size: 42px; font-weight: 300; letter-spacing: 4px;
+            margin-bottom: 20px; color: #3e1c13;
+        }
+        .hero p {
+            font-size: 16px; color: #8e7670; letter-spacing: 2px;
+            max-width: 500px; margin: 0 auto 40px; line-height: 1.8;
+        }
+        .hero .btn-outline {
+            display: inline-block; padding: 12px 25px;
+            border: 1px solid #6d3121;
+            color: #6d3121;
+            font-size: 14px; letter-spacing: 2px;
+            background: transparent; border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .hero .btn-outline:hover {
+            background: #6d3121;
+            color: #ffffff;
             text-decoration: none;
         }
-        .top-bar .logo i {
-            color: #ccc;
-            margin-right: 8px;
-            font-size: 18px;
-        }
-        .top-bar .nav-links a {
-            font-size: 13px;
-            color: #999;
-            text-decoration: none;
-            margin-left: 24px;
-            transition: color .2s;
-        }
-        .top-bar .nav-links a:hover { color: #1a1a1a; }
 
-        /* ── 主体区 ── */
-        .main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 {
+            font-size: 28px; font-weight: 300; letter-spacing: 3px;
+            margin-bottom: 15px; color: #461f15;
         }
-        .login-card {
-            width: 100%;
-            max-width: 400px;
+        .section-title .line {
+            display: block; width: 40px; height: 1px;
+            background: #c3573b; margin: 0 auto;
         }
 
-        /* ── 欢迎语 ── */
-        .welcome {
-            text-align: center;
-            margin-bottom: 48px;
+        .about { padding: 80px 0; }
+        .about .feature-item { text-align: center; padding: 40px 20px; }
+        .about .feature-item .fa {
+            font-size: 36px; color: #a37e75; margin-bottom: 20px;
         }
-        .welcome .icon-circle {
-            display: inline-block;
-            width: 56px;
-            height: 56px;
-            line-height: 56px;
-            border-radius: 50%;
-            border: 1px solid #e8e8e8;
-            color: #888;
-            font-size: 22px;
-            margin-bottom: 20px;
+        .about .feature-item h4 {
+            font-size: 16px; font-weight: 400; letter-spacing: 2px;
+            margin-bottom: 12px; color: #5a443e;
         }
-        .welcome h3 {
-            margin: 0 0 6px;
-            font-size: 20px;
-            font-weight: 400;
-            color: #1a1a1a;
-            letter-spacing: 3px;
+        .about .feature-item p {
+            font-size: 13px; color: #a79894; line-height: 1.8;
         }
-        .welcome p {
-            margin: 0;
-            font-size: 13px;
-            color: #bbb;
-            letter-spacing: 1px;
+        .about .company-intro { margin-bottom: 50px; text-align: justify; }
+        .about .company-intro p {
+            font-size: 15px; color: #63524e; line-height: 2;
+            text-indent: 2em; margin-bottom: 10px;
         }
 
-        /* ── 表单 ── */
-        .login-card .field {
-            position: relative;
-            margin-bottom: 28px;
+        .services { padding: 80px 0; background: #f3e9e6; }
+        .services .service-card {
+            background: #ffffff; padding: 30px 25px; margin-bottom: 30px;
+            text-align: center; transition: all 0.35s;
+            border: 1px solid #e2dedd; border-radius: 4px;
         }
-        .login-card .field .fa {
-            position: absolute;
-            left: 0;
-            top: 12px;
-            color: #ccc;
-            font-size: 15px;
-            z-index: 2;
-            transition: color .25s;
+        .services .service-card:hover {
+            box-shadow: 0 8px 30px rgba(8,93,178,0.08);
+            transform: translateY(-3px);
         }
-        .login-card .field input {
-            width: 100%;
-            padding: 10px 0 10px 28px;
-            border: none;
-            border-bottom: 1px solid #e8e8e8;
-            border-radius: 0;
-            outline: none;
-            font-size: 15px;
-            color: #333;
-            background: transparent;
-            transition: border-color .25s;
+        .services .service-card .fa {
+            font-size: 32px; color: #9f6c5f; margin-bottom: 18px;
         }
-        .login-card .field input:focus {
-            border-bottom-color: #1a1a1a;
+        .services .service-card h4 {
+            font-size: 15px; letter-spacing: 2px; margin-bottom: 10px;
+            font-weight: 400; color: #543f3a;
         }
-        .login-card .field input:focus + .fa,
-        .login-card .field input:focus ~ .fa {
-            color: #1a1a1a;
-        }
-        .login-card .field input::placeholder {
-            color: #ccc;
+        .services .service-card p {
+            font-size: 13px; color: #a3928e; line-height: 1.8;
         }
 
-        /* ── 记住我 / 选项行 ── */
-        .options {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 28px;
-            font-size: 13px;
-            color: #aaa;
-        }
-        .options label {
-            font-weight: 400;
-            cursor: pointer;
-            margin: 0;
-        }
-        .options label input {
-            margin-right: 6px;
-            vertical-align: middle;
-        }
-        .options a {
-            color: #aaa;
-            text-decoration: none;
-            transition: color .2s;
-        }
-        .options a:hover { color: #1a1a1a; }
-
-        /* ── 按钮 ── */
-        .btn-submit {
-            width: 100%;
-            height: 46px;
-            border: 1px solid #1a1a1a;
-            background: #1a1a1a;
-            color: #fff;
-            font-size: 14px;
-            letter-spacing: 4px;
-            border-radius: 23px;
-            cursor: pointer;
-            transition: all .25s;
-            outline: none;
-        }
-        .btn-submit:hover {
-            background: #fff;
-            color: #1a1a1a;
+        .contact { padding: 80px 0; text-align: center; }
+        .contact p {
+            font-size: 15px; color: #907d78;
+            letter-spacing: 1px; line-height: 2;
         }
 
-        /* ── 底部链区 ── */
-        .extra-links {
-            text-align: center;
-            margin-top: 32px;
-            font-size: 13px;
-            color: #ccc;
-        }
-        .extra-links span { margin: 0 4px; }
-        .extra-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color .2s;
-        }
-        .extra-links a:hover { color: #1a1a1a; }
-
-        /* ── 备案 ── */
         .footer {
-            text-align: center;
-            padding: 18px 15px;
-            font-size: 12px;
-            color: #d0d0d0;
-            border-top: 1px solid #f7f7f7;
+            background: #2e150e; padding: 40px 0 10px;
+            text-align: center; color: #a88f89;
+            font-size: 13px; line-height: 2;
         }
-        .footer a {
-            color: #d0d0d0;
-            text-decoration: none;
-            transition: color .2s;
-        }
-        .footer a:hover { color: #999; }
+        .footer a { color: #bdaba7; transition: color 0.3s; }
+        .footer a:hover { color: #ffffff; }
+        .footer .filing-info { margin-top: 10px; }
+        .footer .filing-info span { margin: 0 10px; color: #625350; }
 
-        /* ── 移动端微调 ── */
-        @media (max-width: 480px) {
-            .top-bar { padding: 12px 18px; }
-            .top-bar .nav-links a { margin-left: 14px; font-size: 12px; }
-            .main { padding: 30px 18px; }
-            .welcome { margin-bottom: 36px; }
-            .welcome h3 { font-size: 18px; letter-spacing: 2px; }
-            .btn-submit { border-radius: 4px; }
+        .btn-primary {
+            background: #7c3826; border-color: #7c3826;
         }
+        .btn-primary:hover {
+            background: #9c462f; border-color: #9c462f;
+        }
+        #loginModal .modal-content { border-radius: 8px; }
+        #loginModal .modal-header { border-bottom: 1px solid #e2dedd; }
+        #loginModal .modal-footer { border-top: 1px solid #e2dedd; }
     </style>
 </head>
 <body>
 
-    <!-- 顶栏 -->
-    <div class="top-bar">
-        <a class="logo" href="#"><i class="fa fa-newspaper-o"></i>时政通</a>
-        <div class="nav-links">
-            <a href="#">首页</a>
-            <a href="#">题库</a>
-            <a href="#">关于</a>
-        </div>
-    </div>
-
-    <!-- 主体 -->
-    <div class="main">
-        <div class="login-card">
-            <div class="welcome">
-                <div class="icon-circle"><i class="fa fa-globe"></i></div>
-                <h3>时政一点通</h3>
-                <p>POLITICAL NEWS · SIGN IN</p>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">菜单</span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">梦颖网络</a>
             </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#cases">案例</a></li>
+                    <li><a href="javascript:void(0)" onclick="$('#loginModal').modal('show')">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <form>
-                <div class="field">
-                    <i class="fa fa-envelope-o"></i>
-                    <input type="text" placeholder="用户名" autocomplete="off">
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>极简 · 专业 · 信赖</h1>
+            <p>您正在访问域名 Shizhengtong.com 为梦颖网络业务域名。<br/>用于承载梦颖网络旗下运营的<b>企业微信群</b>的二维码交互内容。</p>
+            <a href="//mb.szydt.cn" class="btn-outline">开 始 探 索</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于我们</h2>
+                <span class="line"></span>
+            </div>
+            <div class="company-intro">
+                <p>兰山区梦颖网络中心成立于2023年08月31日，注册地位于山东省临沂市兰山区兰山街道蒙山大道顺和母幼采购基地2-32号。</p>
+                <p>经营范围：网络技术服务；软件开发；广告制作；广告发布；广告设计、代理；平面设计；软件外包服务；信息技术咨询服务；网络与信息安全软件开发；技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广。</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><div class="feature-item"><i class="fa fa-diamond"></i><h4>网址缩短</h4><p>缩短后发布到对应的企业微信群内，方便分享浏览。</p></div></div>
+                <div class="col-md-4"><div class="feature-item"><i class="fa fa-lightbulb-o"></i><h4>图片分享</h4><p>保持对前沿技术的敏锐感知，驱动业务不断进化。</p></div></div>
+                <div class="col-md-4"><div class="feature-item"><i class="fa fa-heart-o"></i><h4>会员管理</h4><p>用心聆听客户的需求，提供量身定制的服务方案。</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>服务项目</h2>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6"><div class="service-card"><i class="fa fa-desktop"></i><h4>网站建设</h4><p>响应式企业官网设计与开发</p></div></div>
+                <div class="col-md-3 col-sm-6"><div class="service-card"><i class="fa fa-mobile"></i><h4>移动应用</h4><p>iOS / Android 原生应用开发</p></div></div>
+                <div class="col-md-3 col-sm-6"><div class="service-card"><i class="fa fa-cloud"></i><h4>云计算服务</h4><p>企业级云架构搭建与运维</p></div></div>
+                <div class="col-md-3 col-sm-6"><div class="service-card"><i class="fa fa-line-chart"></i><h4>品牌策划</h4><p>品牌定位与数字化营销策略</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="services" style="background:#f7f3f1;">
+        <div class="container">
+            <div class="section-title">
+                <h2>案例展示</h2>
+                <span class="line"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6"><div class="service-card"><i class="fa fa-shopping-cart"></i><h4>微信小程序</h4><p>电商平台搭建项目</p></div></div>
+                <div class="col-md-4 col-sm-6"><div class="service-card"><i class="fa fa-building-o"></i><h4>微信公众号</h4><p>某某行业解决方案</p></div></div>
+                <div class="col-md-4 col-sm-6"><div class="service-card"><i class="fa fa-bank"></i><h4>企业微信群</h4><p>金融数字化转型案例</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2026 <a href="//www.Shizhengtong.com">兰山区梦颖网络中心</a> 版权所有.</p>
+            <p class="filing-info">
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备2025189343号-11</a>
+                <span>|</span>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37131202371948" target="_blank" rel="nofollow">鲁公网安备37131202371948号</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="关闭"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginModalLabel">用户登录</h4>
                 </div>
-                <div class="field">
-                    <i class="fa fa-key"></i>
-                    <input type="password" placeholder="密码" autocomplete="off">
+                <div class="modal-body">
+                    <div class="form-group"><div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span><input type="text" id="loginUsername" class="form-control" placeholder="请输入用户名"></div></div>
+                    <div class="form-group"><div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span><input type="password" id="loginPassword" class="form-control" placeholder="请输入密码"></div></div>
+                    <div class="checkbox" style="margin-top:0;margin-bottom:10px;"><label><input type="checkbox" id="rememberMe"> 记住密码</label></div>
+                    <button type="button" id="loginBtn" class="btn btn-primary btn-block">登 录</button>
+                    <div id="loginMsg" style="text-align:center;margin-top:10px;font-size:13px;"></div>
                 </div>
-
-                <div class="options">
-                    <label><input type="checkbox"> 保持登录</label>
-                    <a href="#">忘记密码？</a>
+                <div class="modal-footer" style="text-align:center;">
+                    <span style="font-size:13px;color:#9e8d89;">还没有账号？<a href="javascript:void(0)" style="color:#b37022;">立即注册</a></span>
                 </div>
-
-                <button type="submit" class="btn-submit">登  录</button>
-            </form>
-
-            <!--<div class="extra-links">
-                还没有账号？<a href="#">立即注册 <i class="fa fa-arrow-right"></i></a>
-            </div>-->
+            </div>
         </div>
     </div>
 
-    <!-- 备案号 -->
-    <div class="footer">
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鲁ICP备2025189343号-11</a>
-    </div>
-
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        $('#loginBtn').on('click', function() {
+            var username = $('#loginUsername').val().trim();
+            var password = $('#loginPassword').val().trim();
+            if (!username) { $('#loginMsg').html('<span style="color:#d9534f;">请输入用户名</span>'); return; }
+            if (!password) { $('#loginMsg').html('<span style="color:#d9534f;">请输入密码</span>'); return; }
+            $('#loginMsg').html('<span style="color:#b37022;">登录中...</span>');
+            setTimeout(function() { $('#loginMsg').html('<span style="color:#5cb85c;">登录成功！欢迎回来</span>'); }, 1000);
+        });
+    </script>
 </body>
 </html>
